@@ -5,5 +5,5 @@ from django.http import HttpResponse
 def time_info_view(request):
     time=datetime.datetime.now()
     print(type(time))
-    s='<h1>Hello current date and time:'+str(time)+'</h1>'
+    s='<h1>Hello current date and time: '+str(time)+'</h1>'
     return HttpResponse(s)
